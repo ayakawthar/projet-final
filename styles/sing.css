@@ -13,6 +13,7 @@ ul{
     justify-content: space-around;
     list-style: none;
     font-size: 20px;
+    align-items: center;
 }
 form{
     display: flex;
@@ -21,7 +22,6 @@ form{
 
 }
 input{
-     
     border-radius: 6px;
     height: 50px ;
     width: 250px;
@@ -29,11 +29,13 @@ input{
 .class{
     display: flex;
     flex-direction: column;
+    align-items: center;
     
 }
 .style{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
  #button{
     border: 10px solid rgb(253, 208, 7, 0.925) ;
@@ -49,6 +51,8 @@ button{
     background-color: rgb(253, 208, 7, 0.925);
     height: 30px;
     width: 70px;
+    display: flex;
+    align-items: flex-start;
 }
 button:hover{
     background-color: rgba(15, 2, 88, 0.925);
@@ -64,5 +68,13 @@ a:hover{
 h3{
     font-size: 15px;
 }
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+    
+
 
 

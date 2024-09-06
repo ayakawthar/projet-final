@@ -12,6 +12,7 @@ ul{
     justify-content: space-around;
     list-style: none;
     font-size: 20px;
+    align-items: center;
 }
 .button{
     border: 7px solid rgb(253, 208, 7, 0.925)  ;
@@ -47,4 +48,12 @@ a{
 }
 a:hover{
     color: brown;
+}
+nav{
+    align-items: center;
+}
+img:hover{
+    scale: 1.0;
+    cursor: pointer;
+     transition: 3s;
 }
