@@ -29,20 +29,7 @@ ul{
 p{
     font-size: 20px;
 }
-.carré1{
-    height: 0px;
-    width: 0px;
-    border: 90px solid black;
-    border-radius: 12px;
-    background-color: black;
-}
-.carré2{
-    height: 0px;
-    width: 0px;
-    border: 90px solid rgb(253, 208, 7, 0.925) ;
-    border-radius: 12px;
-    background-color: rgb(253, 208, 7, 0.925) ;
-}
+
 #client{
     
     border-radius: 10px;
