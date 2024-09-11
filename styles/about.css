@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f9fa;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 10px;
+  }
+  #button{
+    border: 10px solid rgb(253, 208, 7, 0.925) ;
+    border-radius: 7px ;
+    background-color: rgb(253, 208, 7, 0.925);
+    height: 30px;
+    width: 70px;
+}
+  
+  .right ,.left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  .name{
+    display: flex;
+    justify-content: center;
+  }
+  .right img {
+    max-width: 100%;
+    height: auto;
+  }
+  .left img{
+    max-width: 100%;
+    height: auto;
+  }
+  .open:hover{
+    cursor: pointer;
+    scale: 0.8;
+    transition: 0.5s;
+}
+.name:hover{
+    cursor: pointer;
+    scale: 0.8;
+    transition: 0.5s;
+}
+a{
+  color: grey;
+}
+a:hover{
+  color: brown;
+}
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  footer ul li {
+    padding: 5px;
+  }
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .right, .left {
+      flex-direction: column;
+    }
+  
+    .right img, .left img {
+      width: 80%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
+  
+    .open p {
+      padding: 0 15px;
+    }
+  
+    .name h3 {
+      padding: 0 15px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+      padding: 0;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+    .right, .left {
+      flex-direction: column;
+    }
+  
+    .right img, .left img {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 20px;
+    }
+  
+    .open p, .name h3 {
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+  }
+    
+  

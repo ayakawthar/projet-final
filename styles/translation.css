@@ -4,16 +4,22 @@
 }
 body{
     height: 100vh;
-    background-color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-family: 'Muli', sans-serif;
 }
-ul{
+nav ul {
+    list-style-type: none;
+    padding: 0;
     display: flex;
     justify-content: space-around;
-    list-style: none;
-    font-size: 20px;
     align-items: center;
-}
+    background-color: #f8f9fa;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 10px;
+  }
 .button{
     border: 7px solid rgb(253, 208, 7, 0.925)  ;
     border-radius: 7px ;
@@ -27,16 +33,13 @@ ul{
 }
 p{
     font-size: 20px;
+
 }
 .lexicon{
     display: flex;
     justify-content: space-around;
 }
 .premium{
-    display: flex;
-    justify-content: space-around;
-}
-.robot{
     display: flex;
     justify-content: space-around;
 }
@@ -52,8 +55,125 @@ a:hover{
 nav{
     align-items: center;
 }
-img:hover{
-    scale: 1.0;
+.service:hover{
     cursor: pointer;
-     transition: 3s;
+    scale: 0.8;
+    transition: 0.5s;
 }
+.translation:hover{
+    cursor: pointer;
+    scale: 0.8;
+    transition: 0.5s;
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  footer ul li {
+    padding: 5px;
+  }
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      
+    }
+  
+    .style {
+      flex-direction: column;
+      text-align: center;
+    }
+    .lexicon{
+        flex-direction: column;
+      text-align: center;
+    }
+    .premium{
+        flex-direction: column;
+      text-align: center;
+    }
+  
+    .style img{
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    .lexicon img{
+        width: 80%;
+      margin-bottom: 20px;
+    }
+    .premium img {
+        width: 80%;
+        margin-bottom: 20px;  
+    }
+  
+    .service {
+      text-align: center;
+    }
+    .translation{
+        text-align: center;
+    }
+  
+    .style p{
+      padding: 0 20px;
+    }
+    .lexicon P{
+        padding: 0 20px;
+    }
+    .premium p{
+        padding: 0 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    .style{
+      flex-direction: column;
+      text-align: center;
+    }
+    .lexicon{
+        flex-direction: column;
+      text-align: center;
+    }
+    .premium{
+        flex-direction: column;
+      text-align: center;
+    }
+  
+    .style img {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 20px;
+    }
+     .lexicon img{
+        width: 100%;
+      max-width: 250px;
+      margin-bottom: 20px;
+     }
+     .premium img {
+        width: 100%;
+      max-width: 250px;
+      margin-bottom: 20px;
+     }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    button {
+      width: 100%;
+      text-align: center;
+    }
+    a.button{
+        width: 100%;
+      text-align: center;
+    }
+  }
