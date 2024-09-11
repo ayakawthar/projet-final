@@ -1,19 +1,8 @@
-function sendMail(){
-  var params= {
-  FirstName:document.getElementById("name").value,
-  email:document.getElementById("email").value,
-  password:document.getElementById("password").value,
-  };
-  const serviceID ="service_iysezge"
-  const templateID ="template_wvldnae"
- email.js(serviceID,templateID,params)
-.then(
-  res =>{
-    document.getElementById("name").value ="";
-    document.getElementById("email").value="";
-    document.getElementById("password").value="";
-    alert("Your registration is validated.")
+const labels = document.querySelectorAll('.form-control label')
 
-    }) 
-    .catch((err)=>console.log(err));
-}
+labels.forEach(label => {
+    label.innerHTML = label.innerText
+        .split('')
+        .map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+        .join('')
+})

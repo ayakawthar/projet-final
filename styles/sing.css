@@ -7,7 +7,7 @@
     body {
       font-family: Arial, sans-serif;
       font-size: 25px;
-      background-color: #f7f9fa;
+      background-color: #fdfdfd;
       
     }
     
@@ -32,28 +32,31 @@
       color: grey;
       text-decoration: none;
     }
-    
-    h5 {
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
-    
     .value {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: rgba(180, 177, 177, 0.945);
+      width: 350px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: rgb(142, 167, 199);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-    }
-    
-    .value input {
+
+  }
+  
+  .value h5 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #1f1e1e;
+  }
+  
+  .value input {
       width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #aaa9a9;
-      border-radius: 4px;
-    }
+      padding: 10px 30px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      
+  }
     
     button {
       padding: 10px 20px;
