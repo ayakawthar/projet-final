@@ -6,7 +6,6 @@ body {
     font-family: Arial, sans-serif;
     font-size: 25px;
   }
-  
   nav ul {
     list-style-type: none;
     padding: 0;
@@ -15,7 +14,6 @@ body {
     align-items: center;
     background-color: #f8f9fa;
   }
-  
   nav ul li {
     display: inline-block;
     padding: 10px;
@@ -26,9 +24,14 @@ body {
     background-color: rgb(253, 208, 7, 0.925);
     height: 30px;
     width: 70px;
-}
-  
-  .right ,.left{
+  }
+  .right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+  }
+  .left{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -50,18 +53,18 @@ body {
     cursor: pointer;
     scale: 0.8;
     transition: 0.5s;
-}
-.name:hover{
+  }
+  .name:hover{
     cursor: pointer;
     scale: 0.8;
     transition: 0.5s;
-}
-a{
-  color: grey;
-}
-a:hover{
-  color: brown;
-}
+  }
+  a{
+   color: grey;
+  }
+  a:hover{
+   color: brown;
+  }
   footer ul {
     display: flex;
     justify-content: space-around;
@@ -69,7 +72,6 @@ a:hover{
     padding: 10px;
     background-color: #f8f9fa;
   }
-  
   footer ul li {
     padding: 5px;
   }
@@ -77,27 +79,29 @@ a:hover{
     nav ul {
       flex-direction: column;
     }
-  
-    .right, .left {
+    .right {
       flex-direction: column;
     }
-  
-    .right img, .left img {
+    .left{
+      flex-direction: column;
+    }
+    .right img {
       width: 80%;
       max-width: 300px;
       margin-bottom: 20px;
     }
-  
+    .left img{
+      width: 80%;
+      max-width: 300px;
+      margin-bottom: 20px;
+    }
     .open p {
       padding: 0 15px;
     }
-  
     .name h3 {
       padding: 0 15px;
     }
   }
-  
-  
   @media screen and (max-width: 480px) {
     nav ul {
       flex-direction: column;
@@ -106,26 +110,33 @@ a:hover{
     h1 {
       font-size: 1.5rem;
     }
-  
     h2 {
       font-size: 1.2rem;
     }
-  
     h3 {
       font-size: 1rem;
     }
-  
-    .right, .left {
+    .right{
       flex-direction: column;
     }
-  
-    .right img, .left img {
+    .left{
+      flex-direction: column;
+    }
+    .right img {
       width: 100%;
       max-width: 250px;
       margin-bottom: 20px;
     }
-  
-    .open p, .name h3 {
+    .left img {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 20px;
+    }
+    .open p{
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+    .name h3{
       font-size: 0.9rem;
       padding: 0 10px;
     }

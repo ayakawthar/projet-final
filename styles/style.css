@@ -7,6 +7,11 @@ body{
     font-family: 'Muli', sans-serif;
     font-size: 25px;
 }
+  
+nav {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -20,28 +25,34 @@ nav ul {
     padding: 10px;
   }
 h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   
   .big {
     text-align: center;
   }
   
-  .right, .left, .service {
+  .right {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 20px 0;
   }
-
+  .left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .service{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+  }
 p{
     font-size: 30px;
 }
-#client{
-    
-    border-radius: 10px;
-}
-
 .style{
     display: flex;
     justify-content: space-between;
@@ -75,23 +86,59 @@ footer ul {
     padding: 10px;
     background-color: #f8f9fa;
   }
-  
   footer ul li {
     padding: 5px;
+  }
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 18px;
+    }
+    nav ul {
+      flex-direction: column;
+     
+    }
+    .big {
+      max-width: 90%;
+    }
+    .right{
+      flex-direction: column;
+      text-align: center;
+    }
+    .left{
+        flex-direction: column;
+      text-align: center;
+    }
+    .service{
+        flex-direction: column;
+      text-align: center;
+    }
+    .right img{
+      width: 80%;
+      margin-bottom: 20px;
+    }
+    .left  img{
+        width: 80%;
+      margin-bottom: 20px;
+    }
+    .service img {
+        width: 80%;
+        margin-bottom: 20px;  
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
   }
 @media screen and (max-width: 480px) {
     h1 {
       font-size: 1.5rem;
     }
-  
     nav ul {
       flex-direction: column;
+      align-items: center;
     }
-  
     .big h2 {
       font-size: 1.2rem;
     }
-  
     .big p {
       font-size: 0.9rem;
     }

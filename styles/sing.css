@@ -3,31 +3,24 @@
       padding: 0;
       box-sizing: border-box;
     }
-    
     body {
       font-family: Arial, sans-serif;
       font-size: 25px;
-      background-color: #fdfdfd;
-      
+      background-color: #fdfdfd; 
     }
-    
-    nav {
-      background-color: #f8f9fa;
-      padding: 1rem;
+     nav {
+       background-color: #f8f9fa;
+        padding: 1rem;
     }
-    
     nav ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
       list-style: none;
     }
-    
     nav ul li {
-      margin: 0 10px;
-      
+      margin: 0 10px; 
     }
-    
     nav ul li a {
       color: grey;
       text-decoration: none;
@@ -39,25 +32,20 @@
       background-color: rgb(142, 167, 199);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-
-  }
-  
+    }
   .value h5 {
       margin-bottom: 10px;
       font-size: 24px;
       color: #1f1e1e;
-  }
-  
-  .value input {
+    }
+    .value input {
       width: 100%;
       padding: 10px 30px;
       margin-bottom: 15px;
       border: 1px solid #ddd;
       border-radius: 5px;
       font-size: 14px;
-      
-  }
-    
+    } 
     button {
       cursor: pointer;
      display: inline-block;
@@ -69,15 +57,12 @@
      border: 0;
      border-radius: 5px;
     }
-    
     button:focus {
        outline: 0;
-     }
-
+    }
     button:active {
-    transform: scale(0.98);
-   }
-    
+     transform: scale(0.98);
+    }
     button:hover {
       background-color: #333;
     }
@@ -92,11 +77,9 @@
       .value {
         max-width: 90%;
       }
-    
       h5 {
         font-size: 0.9rem;
       }
-      
       button {
         font-size: 0.9rem;
       }
@@ -104,12 +87,10 @@
     @media screen and (max-width: 480px) {
       nav ul {
         flex-direction: column;
-        
       }
       .value {
         padding: 10px;
       }
-    
       h5 {
         font-size: 0.85rem;
       }
